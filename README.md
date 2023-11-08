@@ -2,18 +2,18 @@
 
 Table of Contents
 
-Introduction
-System Overview
-Functional Requirements
-Non-Functional Requirements
-User Interface
-Security Requirements
-System Performance
-System Design Constraints
-External Interfaces
-Legal and Compliance Requirements
-Glossary
-Appendices
+1.Introduction
+2.System Overview
+3.Functional Requirements
+4.Non-Functional Requirements
+5.User Interface
+6.Security Requirements
+7.System Performance
+8.System Design Constraints
+9.External Interfaces
+10.Legal and Compliance Requirements
+11.Glossary
+12.Appendices
 
 
 1. Introduction
@@ -61,26 +61,26 @@ Provide wireframes, mock-ups, or descriptions of the user interface, including s
    
 Detail the security measures to be implemented, such as user authentication, data encryption, and measures to prevent unauthorized access.
 
-8. System Performance
+7. System Performance
    
 Define performance metrics and expectations for the application, such as response times and the number of concurrent users.
 
-10. System Design Constraints
+8. System Design Constraints
     
 Discuss any constraints affecting system design, such as compatibility with specific web browsers or platforms.
 
-12. External Interfaces
+9. External Interfaces
     
 List any external systems or APIs that the chat application will need to integrate with, such as social media logins or third-party services.
 
-14. Legal and Compliance Requirements
+10. Legal and Compliance Requirements
     
 Outline any legal or regulatory requirements that the application must adhere to, including data privacy and intellectual property.
 
-16. Glossary
+11. Glossary
     
 Define and explain any technical terms or jargon used in the document.
 
-18. Appendices
+12. Appendices
     
 Include any additional information, diagrams, or reference materials that support the requirements specified in this document.
