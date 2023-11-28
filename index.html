@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="chat-box">
+        <div id="chat-messages"></div>
+        <div id="user-input">
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    
+    <script>
+        function sendMessage() {
+            const messageInput = document.getElementById('messageInput');
+            const message = messageInput.value;
+
+            // Display the sent message on the client-side
+            displayMessage(`You: ${message}`);
+
+            // Send the message to the server (replace with your server logic)
+            // For example, using AJAX to send the message to the server
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', '/sendMessage', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({ message }));
+
+            messageInput.value = '';
+        }
+
+        function displayMessage(message) {
+            const chatMessages = document.getElementById('chat-messages');
+            const messageP = document.createElement('p');
+            messageP.textContent = message;
+            chatMessages.appendChild(messageP);
+        }
+
+        // Example: Receive messages from the server (replace with your server logic)
+        function receiveMessage(message) {
+            displayMessage(`Friend: ${message}`);
+        }
+    </script>
+</body>
+</html>
